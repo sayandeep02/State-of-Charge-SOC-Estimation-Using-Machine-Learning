@@ -105,7 +105,8 @@ $$ -->
     <!-- $$
      y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \ 
      $$ -->
-    ![LR equation](images/LR equation.png)
+    
+    ![alt text](<images/LR equation.png>)
     #### Visualization:
     ![alt text](LGHG2@n10C_to_25degC/images/lregression.png)
     - **Observed vs Predicted**
@@ -129,18 +130,19 @@ $$ -->
     #### Splitting Criterion:
     - At each node, the dataset is split to minimize the **mean squared error (MSE)** or another metric.
     - The formula for **MSE** at a node is:
-    $$
+    <!-- $$
     \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2
-    \ $$
+    \ $$ -->
+    ![alt text](<images/DT1.png>)
         - $n$→ Number of samples at the node  
         - $y_i$ → Actual values  
         - $\hat{y}$ → Predicted value  
+  
 
     #### Prediction Formula:
     - The predicted value at a **leaf node** is the **average** of the target values in that region:
-    $$
-\hat{y} = \frac{1}{n} \sum_{i=1}^{n} y_i
-$$
+    <!-- $$ \hat{y} = \frac{1}{n} \sum_{i=1}^{n} y_i $$ -->
+    ![alt text](images/DT2.png)
 
 
     #### Visualization:
@@ -170,7 +172,7 @@ d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}
 $$
 
     
-    3. **Aggregation of Results:**  
+    1. **Aggregation of Results:**  
         - The predicted value for the new point is the **average** (or sometimes a weighted average) of the values of the nearest neighbors:
     $$ 
     \hat{y} = \frac{1}{K} \sum_{i=1}^{K} y_i
@@ -178,7 +180,7 @@ $$
         - $K$→ Number of nearest neighbors  
         - $y_i$→ Target values of the \( K \) neighbors  
     
-    4. **Choice of K:**  
+    2. **Choice of K:**  
         - $K$ is a **hyperparameter** that requires careful selection.  
         - A **low $K$** value → model is sensitive to noise.  
         - A **high $K$** value → model becomes too general, losing important details.  
