@@ -49,11 +49,11 @@ This project focuses on the estimation of the State of Charge (SOC) for lithium-
 ---
 
 ## 🔥 **Modeling and Evaluation**
-### Metrics used for Models Evaluation
+<!-- ### Metrics used for Models Evaluation
 
 This list will be used later to evaluate trained models metrics. Specifically, the metrics used for models evaluation are:
 
-<!-- - **Max Error:**  
+- **Max Error:**  
 $$
 \text{Max Error} = \max_i |Y_i - \hat{Y_i}|
 $$
