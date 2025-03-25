@@ -53,7 +53,7 @@ This project focuses on the estimation of the State of Charge (SOC) for lithium-
 
 This list will be used later to evaluate trained models metrics. Specifically, the metrics used for models evaluation are:
 
-- **Max Error:**  
+<!-- - **Max Error:**  
 $$
 \text{Max Error} = \max_i |Y_i - \hat{Y_i}|
 $$
@@ -81,11 +81,11 @@ $$
 - **Root Mean Squared Log Error (RMSLE):**  
 $$
 \text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 + \hat{Y_i}) \right)^2}
-$$
+$$ -->
 
 
-<!-- ![alt text](images/metrics3.png)
-![alt text](images/metrics2.png) -->
+![alt text](images/metrics3.png)
+![alt text](images/metrics2.png)
 
 ---
 - ## **Algorithms Used:**
