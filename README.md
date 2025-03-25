@@ -130,10 +130,10 @@ $$ -->
     #### Splitting Criterion:
     - At each node, the dataset is split to minimize the **mean squared error (MSE)** or another metric.
     - The formula for **MSE** at a node is:
-    <!-- $$
-    \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2
-    \ $$ -->
-    ![alt text](<images/DT1.png>)
+        <!-- $$
+        \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2
+        \ $$ -->
+        ![alt text](<images/DT1.png>)
         - $n$→ Number of samples at the node  
         - $y_i$ → Actual values  
         - $\hat{y}$ → Predicted value  
