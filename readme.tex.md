@@ -95,9 +95,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     - The objective of Linear Regression is to find the **coefficient values** that **minimize the sum of squares of the errors**, i.e., the difference between the observed values and the predicted values by the model.
 
     #### Mathematical Representation:
-    $$
-     y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \ 
-     $$
+    $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \$$
 
     #### Visualization:
     ![alt text](LGHG2@n10C_to_25degC/images/lregression.png)
@@ -122,18 +120,14 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     #### Splitting Criterion:
     - At each node, the dataset is split to minimize the **mean squared error (MSE)** or another metric.
     - The formula for **MSE** at a node is:
-    $$
-    \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2
-    \ $$
+    $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2\$$
         - $n$→ Number of samples at the node  
         - $y_i$ → Actual values  
         - $\hat{y}$ → Predicted value  
 
     #### Prediction Formula:
     - The predicted value at a **leaf node** is the **average** of the target values in that region:
-    $$
-\hat{y} = \frac{1}{n} \sum_{i=1}^{n} y_i
-$$
+    $$\hat{y} = \frac{1}{n} \sum_{i=1}^{n} y_i$$
 
 
     #### Visualization:
@@ -158,16 +152,12 @@ $$
     2. **Neighbor Selection:**  
         - For a new data point, **KNN regression** identifies the \( K \) closest points in the training dataset.  
         - Distance is typically calculated using **Euclidean distance**:
-    $$
-d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}
-$$
+    $$d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}$$
 
     
     3. **Aggregation of Results:**  
         - The predicted value for the new point is the **average** (or sometimes a weighted average) of the values of the nearest neighbors:
-    $$ 
-    \hat{y} = \frac{1}{K} \sum_{i=1}^{K} y_i
-    \ $$
+    $$\hat{y} = \frac{1}{K} \sum_{i=1}^{K} y_i\$$
         - $K$→ Number of nearest neighbors  
         - $y_i$→ Target values of the \( K \) neighbors  
     
@@ -215,13 +205,11 @@ $$
     - **Clipped ReLU** for the output layer  
     
     #### **ReLU:**
-    $$
-    \text{ReLU}(x) = 
+    $$\text{ReLU}(x) = 
     \begin{cases} 
     x & \text{if } x > 0 \\ 
     0 & \text{if } x \leq 0 
-    \end{cases}
-    $$
+    \end{cases}$$
     
     #### **Leaky ReLU:**
     $$
