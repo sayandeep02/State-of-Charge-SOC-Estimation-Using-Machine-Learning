@@ -208,42 +208,23 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     - **Clipped ReLU** for the output layer  
     
     #### **ReLU:**
-    $$\text{ReLU}(x) = 
-    \begin{cases} 
-    x & \text{if } x > 0 \\ 
-    0 & \text{if } x \leq 0 
-    \end{cases}$$
+    $$\text{ReLU}(x) =\begin{cases} x & \text{if } x > 0 \\ 0 & \text{if } x \leq 0 \end{cases}$$
     
     #### **Leaky ReLU:**
-    $$
-    \text{Leaky ReLU}(x) = 
-    \begin{cases} 
-    x & \text{if } x > 0 \\ 
-    \alpha \cdot x & \text{if } x \leq 0 
-    \end{cases} 
-    $$
+    $$\text{Leaky ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases}$$
     
     Where:
     - $\alpha$ is the negative slope that allows a small gradient to pass through even for negative values, avoiding the "dying ReLU problem."
     
     #### **Clipped ReLU:**
-    $$
-    \text{Clipped ReLU}(x) = 
-    \begin{cases} 
-    0 & \text{if } x < 0 \\
-    x & \text{if } 0 \leq x < 1 \\
-    1 & \text{if } x \geq 1 
-    \end{cases} 
-    $$
+    $$\text{Clipped ReLU}(x) = \begin{cases} 0 & \text{if } x < 0 \\x & \text{if } 0 \leq x < 1 \\1 & \text{if } x \geq 1 \end{cases}$$
     
     ---
     
     ### **Optimizer: Stochastic Gradient Descent (SGD)**  
     The optimizer chosen for the model is **SGD**, which updates architecture weights to decrease the error.
     
-    $$
-    w_{ij} = w_{ij} - \eta \frac{\delta L}{\delta w_{ij}}
-    $$
+    $$w_{ij} = w_{ij} - \eta \frac{\delta L}{\delta w_{ij}}$$
     
     Where:
     - $\eta$ is the learning rate controlling the update rate  
@@ -254,9 +235,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     ### **Decay Algorithm: Exponential Decay**
     The decay algorithm used is **Exponential Decay**, which stabilizes the optimization process. The learning rate at each epoch \(t\) is updated according to:
     
-    $$
-    \eta_t = \eta_0 \cdot e^{-\lambda t}
-    $$
+    $$\eta_t = \eta_0 \cdot e^{-\lambda t}$$
     
     Where:
     - $\eta_0$ is the initial learning rate  
@@ -268,9 +247,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     ### **Loss Function: Mean Squared Error (MSE)**  
     The loss function used to evaluate the model is **MSE**, aiming to minimize the difference between predicted and actual values.
     
-    $$
-    \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2
-    $$
+    $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2$$
 
     - **Observed vs Predicted**
       ![alt text](<images/FNN-ovs vs pred.png>)
