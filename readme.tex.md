@@ -301,9 +301,9 @@ The goal is to **improve the confidence and reliability** of AI models by provid
 - It assigns a **SHAP value** to each feature, representing its impact on the prediction.
 
 ### **SHAP Formula:**
-$$
-\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(|F| - |S| - 1)!}{|F|!} \big( f(S \cup \{i\}) - f(S) \big)
-\ $$
+
+$$\phi_i = \sum_{S \subseteq F \setminus \{i\}} \frac{|S|!(|F| - |S| - 1)!}{|F|!} \big( f(S \cup \{i\}) - f(S) \big)\$$
+
 Where:
 - $\phi_i$ → SHAP value for feature \( i \)  
 - $F$ → Set of all features  
