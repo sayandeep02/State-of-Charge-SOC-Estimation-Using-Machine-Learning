@@ -1,21 +1,26 @@
 
-
-![GitHub Copilot](https://img.shields.io/badge/github%20copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
-![PyCharm](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
-![VS Code](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
-![NumPy](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
-![Plotly](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
-![Python](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
-![Scikit-Learn](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-
-
-
-
 # State of Charge (SOC) Estimation Using Machine Learning
+
+
+
+
+![image](https://img.shields.io/badge/github%20copilot-000000?style=for-the-badge&logo=githubcopilot&logoColor=white)
+![image](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![image](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)
+![image](https://img.shields.io/badge/PyCharm-000000.svg?&style=for-the-badge&logo=PyCharm&logoColor=white)
+![image](https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
+![image](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual%20studio&logoColor=white)
+![image](https://img.shields.io/badge/Numpy-777BB4?style=for-the-badge&logo=numpy&logoColor=white)
+![image](https://img.shields.io/badge/Pandas-2C2D72?style=for-the-badge&logo=pandas&logoColor=white)
+![image](https://img.shields.io/badge/Plotly-239120?style=for-the-badge&logo=plotly&logoColor=white)
+![image](https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue)
+![image](https://img.shields.io/badge/scikit_learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![image](https://img.shields.io/badge/asus%20laptop-000000?style=for-the-badge&logo=asus&logoColor=white)
+
+
+
+
+
 
 ## 📊 **Project Overview**
 This project focuses on the estimation of the State of Charge (SOC) for lithium-ion batteries using machine learning techniques. It utilizes multiple features such as current, voltage, and temperature to predict SOC accurately.
@@ -49,7 +54,7 @@ This project focuses on the estimation of the State of Charge (SOC) for lithium-
 ---
 
 ## 🔥 **Modeling and Evaluation**
-<!-- ### Metrics used for Models Evaluation
+### Metrics used for Models Evaluation
 
 This list will be used later to evaluate trained models metrics. Specifically, the metrics used for models evaluation are:
 
@@ -81,11 +86,11 @@ $$
 - **Root Mean Squared Log Error (RMSLE):**  
 $$
 \text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 + \hat{Y_i}) \right)^2}
-$$ -->
+$$
 
 
-![alt text](images/metrics3.png)
-![alt text](images/metrics2.png)
+<!-- ![alt text](images/metrics3.png)
+![alt text](images/metrics2.png) -->
 
 ---
 - ## **Algorithms Used:**
@@ -102,11 +107,10 @@ $$ -->
     - The objective of Linear Regression is to find the **coefficient values** that **minimize the sum of squares of the errors**, i.e., the difference between the observed values and the predicted values by the model.
 
     #### Mathematical Representation:
-    <!-- $$
+    $$
      y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \ 
-     $$ -->
-    
-    ![alt text](<images/LR equation.png>)
+     $$
+
     #### Visualization:
     ![alt text](LGHG2@n10C_to_25degC/images/lregression.png)
     - **Observed vs Predicted**
@@ -130,21 +134,18 @@ $$ -->
     #### Splitting Criterion:
     - At each node, the dataset is split to minimize the **mean squared error (MSE)** or another metric.
     - The formula for **MSE** at a node is:
-        <!-- $$
-        \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2
-        \ $$ -->
-
-        
-        ![alt text](<images/DT1.png>)
+    $$
+    \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2
+    \ $$
         - $n$→ Number of samples at the node  
         - $y_i$ → Actual values  
         - $\hat{y}$ → Predicted value  
-  
 
     #### Prediction Formula:
     - The predicted value at a **leaf node** is the **average** of the target values in that region:
-    <!-- $$ \hat{y} = \frac{1}{n} \sum_{i=1}^{n} y_i $$ -->
-    ![alt text](images/DT2.png)
+    $$
+\hat{y} = \frac{1}{n} \sum_{i=1}^{n} y_i
+$$
 
 
     #### Visualization:
@@ -174,7 +175,7 @@ d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}
 $$
 
     
-    1. **Aggregation of Results:**  
+    3. **Aggregation of Results:**  
         - The predicted value for the new point is the **average** (or sometimes a weighted average) of the values of the nearest neighbors:
     $$ 
     \hat{y} = \frac{1}{K} \sum_{i=1}^{K} y_i
@@ -182,7 +183,7 @@ $$
         - $K$→ Number of nearest neighbors  
         - $y_i$→ Target values of the \( K \) neighbors  
     
-    2. **Choice of K:**  
+    4. **Choice of K:**  
         - $K$ is a **hyperparameter** that requires careful selection.  
         - A **low $K$** value → model is sensitive to noise.  
         - A **high $K$** value → model becomes too general, losing important details.  
