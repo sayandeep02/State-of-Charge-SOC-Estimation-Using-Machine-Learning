@@ -208,13 +208,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     - **Clipped ReLU** for the output layer  
     
     #### **ReLU:**
-    \[
-    \text{ReLU}(x) = 
-    \begin{cases} 
-    x, & x > 0, \\
-    0, & x \leq 0.
-    \end{cases}
-    \]
+    $$\text{ReLU}(x) = \begin{cases} x, & x > 0 \\ 0, & x \leq 0 \end{cases}$$
     
     #### **Leaky ReLU:**
     $$\text{Leaky ReLU}(x)=\begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases}$$
