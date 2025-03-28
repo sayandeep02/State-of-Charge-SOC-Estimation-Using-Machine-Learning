@@ -122,7 +122,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     - The formula for **MSE** at a node is:
         
         $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2\$$
-        
+
         - $n$→ Number of samples at the node  
         - $y_i$ → Actual values  
         - $\hat{y}$ → Predicted value  
@@ -154,7 +154,8 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     2. **Neighbor Selection:**  
         - For a new data point, **KNN regression** identifies the \( K \) closest points in the training dataset.  
         - Distance is typically calculated using **Euclidean distance**:
-    $$d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}$$
+  
+            $$d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}$$
 
     
     3. **Aggregation of Results:**  
