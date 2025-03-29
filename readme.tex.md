@@ -218,9 +218,9 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     
     #### **Leaky ReLU:**
 
-    <p align="center">
-    <img src="https://latex.codecogs.com/svg.latex?\text{Leaky~ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases}" />
-    </p>
+<p align="center">
+  <img src="https://latex.codecogs.com/svg.latex?\text{Leaky~ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases}" />
+</p>
 
     Where:
     - $\alpha$ is the negative slope that allows a small gradient to pass through even for negative values, avoiding the "dying ReLU problem."
