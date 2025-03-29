@@ -217,11 +217,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     $$
     
     #### **Leaky ReLU:**
-    $$
-    \left( \sum_{k=1}^n a_k b_k \right)^2 \leq 
-    \left( \sum_{k=1}^n a_k^2 \right) 
-    \left( \sum_{k=1}^n b_k^2 \right)
-    $$
+    $$\left( \sum_{k=1}^n a_k b_k \right)^2 \leq \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)$$
 
     Where:
     - $\alpha$ is the negative slope that allows a small gradient to pass through even for negative values, avoiding the "dying ReLU problem."
