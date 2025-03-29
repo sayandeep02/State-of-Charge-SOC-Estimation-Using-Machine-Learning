@@ -217,8 +217,7 @@ $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 
     $$
     
     #### **Leaky ReLU:**
-$$(\operatorname{Leaky ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases})$$
-
+        $$\text{Leaky ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases}$$
     
     Where:
     - $\alpha$ is the negative slope that allows a small gradient to pass through even for negative values, avoiding the "dying ReLU problem."
