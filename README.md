@@ -284,9 +284,7 @@ $$ -->
     ### **Loss Function: Mean Squared Error (MSE)**  
     The loss function used to evaluate the model is **MSE**, aiming to minimize the difference between predicted and actual values.
     
-    $$
-    \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2
-    $$
+    $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2$$
 
     - **Observed vs Predicted**
       ![alt text](<images/FNN-ovs vs pred.png>)
