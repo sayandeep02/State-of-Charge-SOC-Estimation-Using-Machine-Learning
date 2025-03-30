@@ -169,20 +169,17 @@ $$ -->
     2. **Neighbor Selection:**  
         - For a new data point, **KNN regression** identifies the \( K \) closest points in the training dataset.  
         - Distance is typically calculated using **Euclidean distance**:
-    $$
-d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}
-$$
+        ![alt text](images/KNN1.png)
 
     
-    1. **Aggregation of Results:**  
+    3. **Aggregation of Results:**  
         - The predicted value for the new point is the **average** (or sometimes a weighted average) of the values of the nearest neighbors:
-    $$ 
-    \hat{y} = \frac{1}{K} \sum_{i=1}^{K} y_i
-    \ $$
+        ![alt text](images/KNN2.png)
+
         - $K$→ Number of nearest neighbors  
         - $y_i$→ Target values of the \( K \) neighbors  
     
-    2. **Choice of K:**  
+    4. **Choice of K:**  
         - $K$ is a **hyperparameter** that requires careful selection.  
         - A **low $K$** value → model is sensitive to noise.  
         - A **high $K$** value → model becomes too general, losing important details.  
