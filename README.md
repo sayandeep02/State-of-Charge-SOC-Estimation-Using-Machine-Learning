@@ -214,18 +214,37 @@ This list will be used later to evaluate trained models metrics. Specifically, t
     - **Leaky ReLU** for the third hidden layer (128 neurons)  
     - **Clipped ReLU** for the output layer  
     
-    #### **ReLU:**
-    $$\text{ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ 0 & \text{if } x \leq 0 \end{cases}$$
+    <!-- #### **ReLU:**
+    $$
+    \text{ReLU}(x) = 
+    \begin{cases} 
+    x & \text{if } x > 0 \\ 
+    0 & \text{if } x \leq 0 
+    \end{cases}
+    $$
     
     #### **Leaky ReLU:**
-    $$\text{Leaky ReLU}(x) = \begin{cases} x & \text{if } x > 0 \\ \alpha \cdot x & \text{if } x \leq 0 \end{cases}$$
+    $$
+    \text{Leaky ReLU}(x) = 
+    \begin{cases} 
+    x & \text{if } x > 0 \\ 
+    \alpha \cdot x & \text{if } x \leq 0 
+    \end{cases} 
+    $$
     
     Where:
     - $\alpha$ is the negative slope that allows a small gradient to pass through even for negative values, avoiding the "dying ReLU problem."
     
     #### **Clipped ReLU:**
-    $$\text{Clipped ReLU}(x) = \begin{cases} 0 & \text{if } x < 0 \\x & \text{if } 0 \leq x < 1 \\1 & \text{if } x \geq 1 \end{cases}$$
-    <!-- ![activation_functions](<images/activation_functions.png>) -->
+    $$
+    \text{Clipped ReLU}(x) = 
+    \begin{cases} 
+    0 & \text{if } x < 0 \\
+    x & \text{if } 0 \leq x < 1 \\
+    1 & \text{if } x \geq 1 
+    \end{cases} 
+    $$ -->
+    ![activation_functions](<images/activation_functions.png>)
     ---
     
     ### **Optimizer: Stochastic Gradient Descent (SGD)**  
