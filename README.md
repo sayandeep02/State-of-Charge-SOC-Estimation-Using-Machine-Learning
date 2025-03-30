@@ -155,12 +155,15 @@ This list will be used later to evaluate trained models metrics. Specifically, t
     2. **Neighbor Selection:**  
         - For a new data point, **KNN regression** identifies the \( K \) closest points in the training dataset.  
         - Distance is typically calculated using **Euclidean distance**:
+  
             $$d(x, x') = \sqrt{\sum_{i=1}^{n} (x_i - x'_i)^2}$$
+
             <!-- ![alt text](images/KNN1.png) -->
 
     
     3. **Aggregation of Results:**  
         - The predicted value for the new point is the **average** (or sometimes a weighted average) of the values of the nearest neighbors:
+  
             $$\hat{y} = \frac{1}{K} \sum_{i=1}^{K} y_i\$$
 
             <!-- ![alt text](images/KNN2.png) -->
