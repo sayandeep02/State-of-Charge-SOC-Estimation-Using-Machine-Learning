@@ -118,7 +118,7 @@ This list will be used later to evaluate trained models metrics. Specifically, t
     - The formula for **MSE** at a node is:
   
   
-        $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2\$$
+        <p align="center"> $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y})^2\$$ </p>
 
         
         <!-- ![alt text](<images/DT1.png>) -->
