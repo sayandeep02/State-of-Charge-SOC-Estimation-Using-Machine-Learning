@@ -54,22 +54,22 @@ This project focuses on the estimation of the State of Charge (SOC) for lithium-
 This list will be used later to evaluate trained models metrics. Specifically, the metrics used for models evaluation are:
 
 - **Max Error:**  
-$$\text{Max Error} = \max_i |Y_i - \hat{Y_i}|$$
+<p align="center"> $$\text{Max Error} = \max_i |Y_i - \hat{Y_i}|$$ </p>
 
 - **Mean Absolute Error (MAE):**  
-$$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |Y_i - \hat{Y_i}|$$
+<p align="center"> $$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |Y_i - \hat{Y_i}|$$ </p>
 
 - **Mean Absolute Percentage Error (MAPE):**  
-$$\text{MAPE} = 100 \cdot \frac{1}{n} \sum_{i=1}^{n} \left( \frac{|Y_i - \hat{Y_i}|}{Y_i} \right)$$
+<p align="center"> $$\text{MAPE} = 100 \cdot \frac{1}{n} \sum_{i=1}^{n} \left( \frac{|Y_i - \hat{Y_i}|}{Y_i} \right)$$ </p>
 
 - **Mean Squared Error (MSE):**  
-$$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2$$
+<p align="center"> $$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2$$ </p>
 
 - **Root Mean Squared Error (RMSE):**  
-$$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2}$$
+<p align="center"> $$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2}$$ </p>
 
 - **Root Mean Squared Log Error (RMSLE):**  
-$$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 + \hat{Y_i}) \right)^2}$$
+<p align="center"> $$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 + \hat{Y_i}) \right)^2}$$ </p>
 
 
 <!-- ![alt text](images/metrics3.png)
