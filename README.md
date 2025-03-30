@@ -49,43 +49,31 @@ This project focuses on the estimation of the State of Charge (SOC) for lithium-
 ---
 
 ## 🔥 **Modeling and Evaluation**
-<!-- ### Metrics used for Models Evaluation
+### Metrics used for Models Evaluation
 
 This list will be used later to evaluate trained models metrics. Specifically, the metrics used for models evaluation are:
 
 - **Max Error:**  
-$$
-\text{Max Error} = \max_i |Y_i - \hat{Y_i}|
-$$
+$$\text{Max Error} = \max_i |Y_i - \hat{Y_i}|$$
 
 - **Mean Absolute Error (MAE):**  
-$$
-\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |Y_i - \hat{Y_i}|
-$$
+$$\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |Y_i - \hat{Y_i}|$$
 
 - **Mean Absolute Percentage Error (MAPE):**  
-$$
-\text{MAPE} = 100 \cdot \frac{1}{n} \sum_{i=1}^{n} \left( \frac{|Y_i - \hat{Y_i}|}{Y_i} \right)
-$$
+$$\text{MAPE} = 100 \cdot \frac{1}{n} \sum_{i=1}^{n} \left( \frac{|Y_i - \hat{Y_i}|}{Y_i} \right)$$
 
 - **Mean Squared Error (MSE):**  
-$$
-\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2
-$$
+$$\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2$$
 
 - **Root Mean Squared Error (RMSE):**  
-$$
-\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2}
-$$
+$$\text{RMSE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} (Y_i - \hat{Y_i})^2}$$
 
 - **Root Mean Squared Log Error (RMSLE):**  
-$$
-\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 + \hat{Y_i}) \right)^2}
-$$ -->
+$$\text{RMSLE} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( \log(1 + Y_i) - \log(1 + \hat{Y_i}) \right)^2}$$
 
 
-![alt text](images/metrics3.png)
-![alt text](images/metrics2.png)
+<!-- ![alt text](images/metrics3.png)
+![alt text](images/metrics2.png) -->
 
 ---
 - ## **Algorithms Used:**
@@ -104,7 +92,7 @@ $$ -->
     #### Mathematical Representation:
     $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \ $$
     
-    ![alt text](<images/LR equation.png>)
+    <!-- ![alt text](<images/LR equation.png>) -->
     #### Visualization:
     ![alt text](LGHG2@n10C_to_25degC/images/lregression.png)
     - **Observed vs Predicted**
