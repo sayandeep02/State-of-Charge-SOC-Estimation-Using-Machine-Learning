@@ -261,9 +261,7 @@ $$
     ### **Optimizer: Stochastic Gradient Descent (SGD)**  
     The optimizer chosen for the model is **SGD**, which updates architecture weights to decrease the error.
     
-    $$
-    w_{ij} = w_{ij} - \eta \frac{\delta L}{\delta w_{ij}}
-    $$
+    $$w_{ij} = w_{ij} - \eta \frac{\delta L}{\delta w_{ij}}$$
     
     Where:
     - $\eta$ is the learning rate controlling the update rate  
