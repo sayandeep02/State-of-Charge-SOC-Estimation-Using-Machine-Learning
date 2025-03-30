@@ -102,9 +102,7 @@ $$ -->
     - The objective of Linear Regression is to find the **coefficient values** that **minimize the sum of squares of the errors**, i.e., the difference between the observed values and the predicted values by the model.
 
     #### Mathematical Representation:
-    <!-- $$
-     y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \ 
-     $$ -->
+    $$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon \ $$
     
     ![alt text](<images/LR equation.png>)
     #### Visualization:
