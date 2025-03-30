@@ -225,7 +225,7 @@ $$ -->
     - **Leaky ReLU** for the third hidden layer (128 neurons)  
     - **Clipped ReLU** for the output layer  
     
-    #### **ReLU:**
+    <!-- #### **ReLU:**
     $$
     \text{ReLU}(x) = 
     \begin{cases} 
@@ -254,8 +254,8 @@ $$ -->
     x & \text{if } 0 \leq x < 1 \\
     1 & \text{if } x \geq 1 
     \end{cases} 
-    $$
-    
+    $$ -->
+    ![activation_functions](<images/activation_functions.png>)
     ---
     
     ### **Optimizer: Stochastic Gradient Descent (SGD)**  
@@ -272,9 +272,7 @@ $$ -->
     ### **Decay Algorithm: Exponential Decay**
     The decay algorithm used is **Exponential Decay**, which stabilizes the optimization process. The learning rate at each epoch \(t\) is updated according to:
     
-    $$
-    \eta_t = \eta_0 \cdot e^{-\lambda t}
-    $$
+    $$\eta_t = \eta_0 \cdot e^{-\lambda t}$$
     
     Where:
     - $\eta_0$ is the initial learning rate  
